@@ -2,10 +2,14 @@
 require_once("./defined/config.php");
 require_once("./defined/def.php");
 
-function __autoload($classname)
+function getIncludeFiles($path)
 {
-    $classpath = strtolower( "./class/" . $classname . ".php");
-    if (file_exists($classpath)) {
-        require_once($classpath);
+    $filelist = glob($path);
+    foreach($filelist as $file)
+    {
+        include_once($file);
     }
 }
+
+getIncludeFiles("./classes/*.php");
+getIncludeFiles("./defined/*.php");
