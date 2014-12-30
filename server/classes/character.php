@@ -13,7 +13,7 @@ class Character extends Entity
     {
         parent::__construct($id, $type, $kind, $x, $y);
 
-        $this->orientation = 1; //todo: Utils.randomOrientation();
+        $this->orientation = TYPE_ORIENTATIONS::DOWN; //todo: Utils.randomOrientation();
         $this->attackers = array();
         $this->target = null;
     }
