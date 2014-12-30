@@ -389,9 +389,9 @@ class TYPE_KINDS
         if(!$combineKind)
         {
             $tmpArray = array_merge(TYPE_RANKEDARMORS::getRankedAromrs(),TYPE_RANKEDWEAPON::getRankedWepons());
-            $forbidden = array_merge(TYPE_ENTITIES::SWORD1,TYPE_ENTITIES::CLOTHARMOR);
+
             $tmpArray = array_filter($tmpArray , function($value){
-                if($value == TYPE_ENTITIES::SWORD1 ||$value ==  TYPE_ENTITIES::CLOTHARMOR))
+                if($value == TYPE_ENTITIES::SWORD1 ||$value ==  TYPE_ENTITIES::CLOTHARMOR)
                 {
                     return true;
                 }
