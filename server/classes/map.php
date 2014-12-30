@@ -47,7 +47,7 @@ class Map
 
 
                 $this->initConnectedGroups($mapinfo["doors"]);
-                //this.initCheckpoints(map.checkpoints);
+                $this->initCheckpoints($mapinfo["checkpoints"]);
 
                 //ready: function(f) {
                 //    this.ready_func = f;
