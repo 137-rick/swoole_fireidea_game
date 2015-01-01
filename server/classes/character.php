@@ -78,12 +78,12 @@ class Character extends Entity
 
     public function health()
     {
-        return new Messages_Health($this->hitPoints, false);
+        return new Message_Health($this->hitPoints, false);
     }
 
     public function regen()
     {
-        return new Messages_Health($this->hitPoints, true);
+        return new Message_Health($this->hitPoints, true);
     }
 
     public function  addAttacker($entity)

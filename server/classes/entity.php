@@ -29,13 +29,13 @@ class Entity
 
     public function spawn()
     {
-        $msgObj = new Messages_Spawn($this);
+        $msgObj = new Message_Spawn($this);
         return $msgObj;
     }
 
     public function despawn()
     {
-        $msgObj = new Messages_Despawn($this);
+        $msgObj = new Message_Despawn($this);
         return $msgObj;
     }
 
