@@ -1,0 +1,29 @@
+<?php
+//packet head type
+define("PACKET_TYPE_HELLO", 0);
+define("PACKET_TYPE_WELCOME", 1);
+define("PACKET_TYPE_SPAWN", 2);
+define("PACKET_TYPE_DESPAWN", 3);
+define("PACKET_TYPE_MOVE", 4);
+define("PACKET_TYPE_LOOTMOVE", 5);
+define("PACKET_TYPE_AGGRO", 6);
+define("PACKET_TYPE_ATTACK", 7);
+define("PACKET_TYPE_HIT", 8);
+define("PACKET_TYPE_HURT", 9);
+define("PACKET_TYPE_HEALTH", 10);
+define("PACKET_TYPE_CHAT", 11);
+define("PACKET_TYPE_LOOT", 12);
+define("PACKET_TYPE_EQUIP", 13);
+define("PACKET_TYPE_DROP", 14);
+define("PACKET_TYPE_TELEPORT", 15);
+define("PACKET_TYPE_DAMAGE", 16);
+define("PACKET_TYPE_POPULATION", 17);
+define("PACKET_TYPE_KILL", 18);
+define("PACKET_TYPE_LIST", 19);
+define("PACKET_TYPE_WHO", 20);
+define("PACKET_TYPE_ZONE", 21);
+define("PACKET_TYPE_DESTROY", 22);
+define("PACKET_TYPE_HP", 23);
+define("PACKET_TYPE_BLINK", 24);
+define("PACKET_TYPE_OPEN", 25);
+define("PACKET_TYPE_CHECK", 26);

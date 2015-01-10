@@ -55,7 +55,7 @@ class Area
         if ($this->isEmpty() && $this->hasCompletelyRespawned && $this->empty_callback) {
             $this->hasCompletelyRespawned = false;
             //调用回调
-            $this->empty_callback();
+            call_user_func($this->empty_callback);
         }
 
     }
